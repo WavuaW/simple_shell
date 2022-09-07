@@ -68,6 +68,7 @@ int builtin_set_env(data_of_program *data)
 	env_set_key(data->tokens[1], data->tokens[2], data);
 
 	return (0);
+}
 
 /**
  * builtin_unset_env - ..
@@ -86,5 +87,6 @@ int builtin_unset_env(data_of_program *data)
 		return (5);
 	}
 	env_remove_key(data->tokens[1], data);
-
+	
+	return (0);
 }

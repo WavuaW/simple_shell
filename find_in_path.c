@@ -57,7 +57,6 @@ int find_program(data_of_program *data)
  * Return: array of path directories
  */
 
-
 char **tokenize_path(data_of_program *data)
 {
 	int i = 0;
