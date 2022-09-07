@@ -119,6 +119,7 @@ int builtin_help(data_of_program *data)
 	mensajes[4] = HELP_UNSETENV_MSG;
 	mensajes[5] = HELP_CD_MSG;
 
+	for (i = 0; mensajes[i]; i++)
 	{
 		length = str_length(data->tokens[1]);
 		if (str_compare(data->tokens[1], mensajes[i], length))
@@ -155,3 +156,4 @@ int builtin_alias(data_of_program *data)
 	}
 
 	return (0);
+}
